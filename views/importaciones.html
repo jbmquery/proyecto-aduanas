@@ -1,0 +1,30 @@
+<script type="application/json">
+{"entity":"servicio","title":"Servicio integral de importaciones","idKey":"N° de Ítem","fields":[
+ {"k":"N° de Ítem","ro":1,"tb":1,"g":"Expediente"},
+ {"k":"Cliente","r":1,"tb":1,"ref":{"entity":"clientes","value":"Nombre / Empresa","label":["Nombre / Empresa","RUC / DNI"]}},
+ {"k":"DAM","tb":1,"ph":"Se usa para nombrar la carpeta en Drive"},
+ {"k":"N° de Seguro"},
+ {"k":"Certificado de Origen"},
+ {"k":"Tipo de Mercancía","tb":1},
+ {"k":"Naviera","g":"Transporte"},
+ {"k":"Tipo de Contenedor"},
+ {"k":"Vía","o":["Marítima","Aérea","Terrestre"]},
+ {"k":"VoBo (Visto Bueno)","o":["Sí","No","Pendiente"],"fmt":"badge"},
+ {"k":"Nombre de la Nave"},
+ {"k":"Conocimiento de Embarque (HBL/AWB)","l":"HBL / AWB","tb":1},
+ {"k":"CBM","t":"number"},
+ {"k":"Peso Bruto","t":"number","ph":"kg"},
+ {"k":"Contacto (Teléfono/Correo/Dirección)","l":"Contacto","g":"Origen y referencias"},
+ {"k":"Origen"},
+ {"k":"Referencia del Partner"},
+ {"k":"Tipo que se está utilizando","l":"Tipo de carga","o":["FCL","LCL","Aéreo","Consolidado"]},
+ {"k":"Fecha de Zarpe (ETD)","t":"date","g":"Fechas y estatus"},
+ {"k":"Fecha de Llegada (ETA)","t":"date","tb":1},
+ {"k":"Fecha de Estatus","t":"date"},
+ {"k":"Estatus de la Carga (Entregado / No Entregado)","l":"Estatus de la carga","o":["Entregado","No Entregado"],"fmt":"badge","tb":1},
+ {"k":"Referencia (Google Drive URL/ID)","l":"Carpeta en Drive","ro":1,"fmt":"link","tb":1},
+ {"k":"Reporte del Cliente","t":"textarea"},
+ {"k":"Observación","t":"textarea"}
+]}
+</script>
+<div id="crud-root"></div>

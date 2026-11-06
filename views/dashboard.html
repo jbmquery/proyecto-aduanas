@@ -1,0 +1,12 @@
+<div class="mb-5"><h2 class="text-xl font-semibold">Panel de control</h2><p class="text-sm text-slate-500">Indicadores clave y alertas de plazos</p></div>
+<div class="mb-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
+  <div class="rounded-xl border bg-white p-4 shadow-sm"><div class="text-xs uppercase text-slate-500">Clientes</div><div data-kpi="clientes" class="text-3xl font-bold text-blue-900">–</div><a href="#/clientes" class="text-xs text-blue-700 underline">Gestionar</a></div>
+  <div class="rounded-xl border bg-white p-4 shadow-sm"><div class="text-xs uppercase text-slate-500">Importaciones activas</div><div data-kpi="operacionesActivas" class="text-3xl font-bold text-blue-900">–</div><a href="#/importaciones" class="text-xs text-blue-700 underline">Ver expedientes</a></div>
+  <div class="rounded-xl border bg-white p-4 shadow-sm"><div class="text-xs uppercase text-slate-500">Despachos sin regularizar</div><div data-kpi="ventasPendientes" class="text-3xl font-bold text-amber-600">–</div><a href="#/ventas" class="text-xs text-blue-700 underline">Ver despachos</a></div>
+  <div class="rounded-xl border bg-white p-4 shadow-sm"><div class="text-xs uppercase text-slate-500">Arribos (14 días)</div><div data-kpi="arribos14d" class="text-3xl font-bold text-emerald-600">–</div><a href="#/calendario" class="text-xs text-blue-700 underline">Abrir calendario</a></div>
+</div>
+<div class="grid gap-6 lg:grid-cols-5">
+  <section class="lg:col-span-3"><h3 class="mb-2 font-semibold">Próximos arribos</h3>
+    <div class="overflow-x-auto rounded-xl border bg-white shadow-sm"><table class="tbl min-w-full text-sm"><thead><tr><th>Fecha</th><th>Cliente</th><th>Puerto</th><th>Estado</th><th>Ref.</th></tr></thead><tbody id="arribos"><tr><td colspan="5" class="p-4 text-center text-slate-400">Cargando…</td></tr></tbody></table></div></section>
+  <section class="lg:col-span-2"><h3 class="mb-2 font-semibold">Alertas</h3><div id="alert-list" class="space-y-2"><p class="text-sm text-slate-400">Cargando…</p></div></section>
+</div>

@@ -1,0 +1,25 @@
+<script type="application/json">
+{"entity":"ventas","title":"Reporte de ventas / despachos","idKey":"N° de Orden","fields":[
+ {"k":"N° de Orden","ro":1,"tb":1,"g":"Identificación"},
+ {"k":"N° de Cliente","l":"Cliente","r":1,"tb":1,"ref":{"entity":"clientes","value":"ID_Cliente","label":["Nombre / Empresa","RUC / DNI"]}},
+ {"k":"MOD","l":"MOD (modalidad)","ph":"Ej. 10 - Importación para el consumo"},
+ {"k":"Vía","o":["Marítima","Aérea","Terrestre"],"tb":1},
+ {"k":"DAM","tb":1,"g":"Aduanas","ph":"118-2026-10-000000"},
+ {"k":"¿Regularizado? Sí / No","l":"¿Regularizado?","o":["Sí","No"],"fmt":"badge","tb":1},
+ {"k":"N° de Manifiesto"},
+ {"k":"Canal que salió","o":["Verde","Naranja","Rojo"],"fmt":"badge","tb":1},
+ {"k":"Almacén"},
+ {"k":"Monto CIF","t":"number","fmt":"money","tb":1},
+ {"k":"AWB / BL","g":"Transporte"},
+ {"k":"Agente de Carga"},
+ {"k":"VoBo (Visto Bueno)","o":["Sí","No","Pendiente"],"fmt":"badge"},
+ {"k":"Fecha de Llegada","t":"date","tb":1,"g":"Fechas"},
+ {"k":"Fecha de Levante","t":"date"},
+ {"k":"Fecha de Salida","t":"date"},
+ {"k":"Fecha Límite de Regularización","t":"date","tb":1},
+ {"k":"Documentos Entregados","t":"textarea","g":"Seguimiento"},
+ {"k":"Carga Arribada / Pendiente","o":["Arribada","Pendiente"],"fmt":"badge","tb":1},
+ {"k":"Observaciones","t":"textarea"}
+]}
+</script>
+<div id="crud-root"></div>

@@ -1,0 +1,11 @@
+<script type="application/json">
+{"entity":"clientes","title":"Clientes","idKey":"ID_Cliente","fields":[
+ {"k":"ID_Cliente","l":"ID","ro":1,"tb":1},
+ {"k":"Nombre / Empresa","r":1,"tb":1},
+ {"k":"RUC / DNI","r":1,"tb":1,"pattern":"\\d{8}|\\d{11}","ph":"DNI (8) o RUC (11 dígitos)"},
+ {"k":"Teléfono","t":"tel","tb":1},
+ {"k":"Correo","t":"email","tb":1},
+ {"k":"Fecha_Creacion","l":"Fecha de creación","ro":1,"tb":1}
+]}
+</script>
+<div id="crud-root"></div>

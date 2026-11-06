@@ -1,0 +1,19 @@
+<script type="application/json">
+{"entity":"calendario","title":"Llegadas de carga","idKey":"ID_Evento","fields":[
+ {"k":"ID_Evento","l":"ID","ro":1,"tb":1},
+ {"k":"Cliente","r":1,"tb":1,"ref":{"entity":"clientes","value":"Nombre / Empresa","label":["Nombre / Empresa","RUC / DNI"]}},
+ {"k":"Fecha de Llegada","t":"date","r":1,"tb":1},
+ {"k":"Puerto","o":["CALLAO","PAITA","MATARANI","CHANCAY","SALAVERRY","AEROPUERTO JORGE CHÁVEZ"],"tb":1},
+ {"k":"Estado","o":["Programado","En tránsito","Arribado","En descarga","Levante","Retrasado","Entregado"],"fmt":"badge","tb":1},
+ {"k":"Referencia_Operacion","l":"Referencia de operación","tb":1}
+]}
+</script>
+<div class="mb-6 rounded-xl border bg-white p-4 shadow-sm">
+  <div class="mb-3 flex items-center justify-between">
+    <h2 class="text-xl font-semibold">Calendario de llegadas <span id="cal-title" class="ml-2 text-base font-normal capitalize text-slate-500"></span></h2>
+    <div class="flex gap-1"><button id="cal-prev" class="btn-secondary" aria-label="Mes anterior">‹</button><button id="cal-today" class="btn-secondary">Hoy</button><button id="cal-next" class="btn-secondary" aria-label="Mes siguiente">›</button></div>
+  </div>
+  <div id="cal-grid" class="cal-grid"></div>
+  <p class="mt-2 text-xs text-slate-400">Clic en un día para crear un evento; clic en un evento para editarlo.</p>
+</div>
+<div id="crud-root"></div>
